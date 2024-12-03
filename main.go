@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	day := 1 // Change this to run a different day
+	day := 2 // Change this to run a different day
 	inputFile := fmt.Sprintf("inputs/day%02d.txt", day)
 	input, err := utils.ReadFile(inputFile)
 	if err != nil {
@@ -17,6 +17,8 @@ func main() {
 	switch day {
 	case 1:
 		solutions.SolveDay01(input)
+	case 2:
+		solutions.SolveDay02(input)
 	default:
 		fmt.Println("Day not implemented")
 	}
